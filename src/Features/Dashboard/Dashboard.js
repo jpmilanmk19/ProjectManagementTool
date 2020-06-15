@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
+import OverallStatus from './OverallStatus'
+import EndingProjects from './EndingProjects'
 
-const Dashboard = ()=>(
-    <div>
-        <p>Dashboard</p>
-    </div>
-)
-
-export default Dashboard;
+export default function Dashboard() {
+    return (
+        <div>
+            <OverallStatus />
+            <EndingProjects />
+        </div>
+    )
+}

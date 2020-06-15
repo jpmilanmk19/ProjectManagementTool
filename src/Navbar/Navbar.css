@@ -1,0 +1,13 @@
+.menu_bar{
+    background: linear-gradient(to bottom, #93a5cf 0%, #e4efe9 100%) !important;
+}
+
+.menu_Links{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.ui.secondary.menu{
+    font-weight: bold;
+    color: white;
+}
