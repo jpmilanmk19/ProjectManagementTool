@@ -10,7 +10,6 @@ export default function OverallStatus() {
         axios.get('https://my-json-server.typicode.com/jpmilanmk19/ProjectManagementTool/overallStatus')
         .then((response)=>{
             setOverallStatus(response.data)
-            console.log(overallStatus)
         })
         .catch((error)=>{
 

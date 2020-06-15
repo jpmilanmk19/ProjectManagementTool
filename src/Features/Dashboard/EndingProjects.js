@@ -27,8 +27,8 @@ export default function EndingProjects() {
                 {endingProjects.map(endingProject => (
                     <List.Item key={endingProject.projectId} className="content">
                         <List.Content>
-                            <List.Header as='a'>{endingProject.projectName}</List.Header>
-                            <List.Description as='a'>{endingProject.description}</List.Description>
+                            <List.Header as='a'>{endingProject.ProjectName}</List.Header>
+                            <List.Description as='a'>{endingProject.projectDescription}</List.Description>
                         </List.Content>
                     </List.Item>
                 ))}
