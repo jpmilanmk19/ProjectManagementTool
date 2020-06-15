@@ -1,5 +1,9 @@
 {
     "overallStatus":{
-        "projects" : 10
+        "projects" : 10,
+        "resources":250,
+        "unallocatedCount":35,
+        "openings":50
+
     }
 }
