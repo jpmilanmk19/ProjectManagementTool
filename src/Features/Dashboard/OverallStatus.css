@@ -1,7 +1,15 @@
 .content_center{
     justify-content: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     color: black;
     font-weight: bold;
+
+}
+
+.background_color{
+    /* background: linear-gradient(to bottom, #ff6e7f 0%, #bfe9ff 100%) !important; */
+    border:black;
+    padding: 10px;
 }
