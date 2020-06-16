@@ -3,20 +3,21 @@ import { Segment, List, Header, Icon } from 'semantic-ui-react'
 import './EndingProjects.css'
 import axios from 'axios'
 
-export default function EndingProjects() {
+export default function EndingProjects({projectEndingLoadingStatusToggle}) {
     const [endingProjects, setendingProjects] = useState([])
 
     useEffect(() => {
         axios.get('https://my-json-server.typicode.com/jpmilanmk19/ProjectManagementTool/endingProjects')
             .then((response) => {
                 setendingProjects(response.data)
+                projectEndingLoadingStatusToggle(false)
             })
             .catch((error) => {
-
+                projectEndingLoadingStatusToggle(false)
             })
-    }, [])
+    }, [setendingProjects])
     return (
-        <Segment>
+        <Segment clearing>
             <Header as='h3'>
                 <Icon name='calendar alternate' />
                 <Header.Content>

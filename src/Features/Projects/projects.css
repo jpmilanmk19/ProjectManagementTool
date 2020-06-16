@@ -1,0 +1,4 @@
+.pull_right{
+    justify-content: right;
+    display: flex;
+}

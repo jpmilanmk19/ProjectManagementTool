@@ -3,18 +3,19 @@ import { Grid, Segment } from 'semantic-ui-react';
 import './OverallStatus.css';
 import axios from 'axios';
 
-export default function OverallStatus() {
+export default function OverallStatus({overallStatusLoadingToggle}) {
     const [overallStatus,setOverallStatus] =  useState({}) 
 
     useEffect(()=>{
         axios.get('https://my-json-server.typicode.com/jpmilanmk19/ProjectManagementTool/overallStatus')
         .then((response)=>{
             setOverallStatus(response.data)
+            overallStatusLoadingToggle(false)
         })
         .catch((error)=>{
-
+            overallStatusLoadingToggle(false)
         })
-    },[])
+    },[setOverallStatus])
     return (
         <Segment>
             <Grid divided>
